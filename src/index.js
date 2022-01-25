@@ -3,10 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ProductList from './Components/productDisplay';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="necklet" element={<ProductList title='Necklet'/>} />
+      <Route path="eardrops" element={<ProductList title='Eardrops'/>} />
+      <Route path="wristlet" element={<ProductList title='Wristlet'/>} />
+    </Routes>
+    </BrowserRouter>,
   </React.StrictMode>,
   document.getElementById('root')
 );
