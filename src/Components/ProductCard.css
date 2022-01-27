@@ -9,8 +9,8 @@
     transition: all 0.5s ease;
     cursor: pointer;
     user-select: none;
-    z-index: 10;
     overflow: hidden;
+    position: relative;
   }
   
   .hello:hover {
@@ -28,4 +28,20 @@
     width: 100%;
     margin:auto;
     object-fit: cover;
+  }
+
+  .bestseller{
+    position: absolute;
+    display: block;
+    z-index: 100;
+    top: 21%;
+    text-align: center;
+    color: green;
+    background-color: rgba(228, 225, 225, 0.5);
+    clip-path: 0 0, 100% 0, 100% 75%, 0 100%;
+    width: 100%;
+    padding: 4% 0;
+    font-size: 25px;
+    font-weight: 100;
+    text-transform: uppercase;
   }

@@ -4,6 +4,7 @@ export default function ProductCard({img, price}) {
     return <>
         <div className="col-12 col-sm-8 col-md-6 col-lg-4">
             <div className="card hello h-90">
+                <div className='bestseller'>bestseller</div>
                 <div className='cardDiv'><img className="card-img card-img-yo" src={img} alt="Vans" /></div>
                 <div className="card-body">
                     <h4 className="card-title" style={{margin:'10px 0'}}>Vans Sk8-Hi MTE Shoes</h4>
