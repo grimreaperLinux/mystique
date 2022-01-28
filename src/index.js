@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ProductList from './Components/productDisplay';
 import CarouselAdmin from './adminpanel/CarouselAdmin';
+import Cardadmin from './adminpanel/CardAdmin';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,6 +17,7 @@ ReactDOM.render(
       <Route path="eardrops" element={<ProductList title='Eardrops'/>} />
       <Route path="wristlet" element={<ProductList title='Wristlet'/>} />
       <Route path="carouseladmin" element={<CarouselAdmin/>} />
+      <Route path="cardadmin" element={<Cardadmin/>} />
     </Routes>
     </BrowserRouter>,
   </React.StrictMode>,

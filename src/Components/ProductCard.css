@@ -11,6 +11,7 @@
     user-select: none;
     overflow: hidden;
     position: relative;
+    max-height: 600px;
   }
   
   .hello:hover {
